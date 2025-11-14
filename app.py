@@ -7,7 +7,6 @@ from streamlit_option_menu import option_menu
 
 diabeties_model= pickle.load(open('diabetes.sav','rb'))
 heart_model=pickle.load(open('heart.sav','rb'))
-cancer_model=pickle.load(open('cancer.sav','rb'))
 parkinson_model=pickle.load(open('parkinson.sav','rb'))
 
 
@@ -138,9 +137,6 @@ if (selected == 'Heart Predection'):
 
 
 
-# if (selected == 'Cancer Predection'):
-#     stl.title('Cancer Predection using AIML')
-
     
 if (selected == 'Parkinson Predection'):
     stl.title('Parkinson Predection using AIML')
@@ -232,4 +228,5 @@ if (selected == 'Parkinson Predection'):
             parkinsons_diagnosis = "The person does not have Parkinson's disease"
 
     stl.success(parkinsons_diagnosis)
+
 
